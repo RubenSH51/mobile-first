@@ -478,6 +478,12 @@ footer li
     line-height: 20px;
 }
 
+footer .lista li a
+{
+    text-decoration: none;
+    color: white;
+}
+
 
 .section-four .card
 {
