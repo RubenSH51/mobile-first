@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile First</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  
+    <header>
+        <div class="header-logo">
+            <img src="Assets/img/logo.svg" alt="">
+        </div>
+       
+        <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
+        <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
+        <div class="button-container">
+            <a href="#planes">Conoce Nuestros Planes <span class="header-flechita"></span></a>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="section-one">
+            <div>
+               <img src="Assets/img/Bitcoin.svg" alt="">
+            </div>
+            <h2 class="section-one__title">Visibilizamos todas las tasas de cambio.</h2>
+            <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
+            
+            <div class="tables-container">
+                <div class="tabla tabla1" id="tabla1">
+                    <h2>Monedas</h2>
+                    <table>
+                        <tr>
+                            <td class="texto-gris top-left">Bitcoin</td>
+                            <td class="top-right">$1.96 <span class="down"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="texto-gris">Ethereum</td>
+                            <td>$0.07 <span class="up"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="texto-gris">Ripple</td>
+                            <td>$2.15 <span class="down"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="texto-gris bottom-left">Stellar</td>
+                            <td class="bottom-right">$4.96 <span class="down"></span></td>
+                        </tr>
+                    </table>
+                    <p class="monedas-actualizado"><b>Actualizado:</b> 19 Julio 23:45</p>
+                    <button type="button" class="boton-funcion celestito" onclick="transicion()">
+                        ver comisiones <span class="flechita-tablas">→</span></button>
+                </div>
+
+                <div class="tabla tabla2" id="tabla2">
+                    <h2>Comisiones</h2>
+                    <table>
+                        <tr>
+                            <td class="texto-gris top-left">Bitrade</td>
+                            <td class="top-right">$12.96</td>
+                        </tr>
+                        <tr>
+                            <td class="texto-gris">Bitpreco</td>
+                            <td>$13.07</td>
+                        </tr>
+                        <tr>
+                            <td class="texto-gris">Novadax</td>
+                            <td>$13.15</td>
+                        </tr>
+                        <tr>
+                            <td class="texto-gris bottom-left">Coinext</td>
+                            <td class="bottom-right">$14.96</td>
+                        </tr>
+                    </table>
+                    <p class="comisiones-actualizado"><b>Actualizado:</b> 19 Julio 23:45</p>
+                    <button type="button" class="boton-funcion naranjita" onclick="transicion()">ver monedas <span class="flechita-tablas">→</span></button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-two">
+            <span class="container-batata"></span>
+            <h2>Creamos un producto sin comparación.</h2>
+            <h4>Confiable y diseñado para su uso diario.</h4>
+            <div class="blackcards-container">
+                <div>
+                    <span class="simb-reloj"></span>
+                    <h3>Tiempo real</h3>
+                    <p>Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
+                </div>
+                <div>
+                    <span class="simb-ojo"></span>
+                    <h3>No hay tasas escondidas</h3>
+                    <p>Ni en la compra o al momento de exit, Batatabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
+                </div>
+                <div>
+                    <span class="simb-cash"></span>
+                    <h3>Compara monedas</h3>
+                    <p>No más rumores, con Batatabit sabrás el valor real de cada moneda en el mercado actual.</p>
+                </div>
+                <div>
+                    <span class="simb-check"></span>
+                    <h3>Información confiable</h3>
+                    <p>Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
+                </div>   
+            </div>
+        </section>
+
+
+        <section class="section-three">
+            <h2>Conócelo hoy</h1>
+        </section>
+    
+        <section class="section-four">
+            <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+            <h3>Cualquier plan te da acceso completo a nuestra plataforma.</h3>
+
+            <div class="cards-container" id="planes">
+                <div class="card card1">
+                    <div>
+                        <p>Plan Basic</p>
+                    </div>
+                    <h3>Pago mensual</h3>
+                    <div class="card-precio">
+                        <p><span>$</span>10</p>
+                    </div>
+                    <p>*Acceso ilimitado a toda la plataforma para vos.</p>
+                    <button>Escoger este <span class="flechita"></span></button>  
+                </div>
+
+                <div class="card card2">
+                    <div>
+                        <p>Recomendado</p>
+                    </div>
+                    <h3>Pago anual</h3>
+                    <div class="card-precio">
+                        <p><span>$</span>99</p>
+                    </div>
+                    <p>*Ahorras $21 comparado al plan mensual + contenido extra.</p>
+                    <button>Escoger este <span class="flechita"></span></button>  
+                </div>
+
+                <div class="card card3">
+                    <div>
+                        <p>Plan Premium</p>
+                    </div>
+                    <h3>Unico pago</h3>
+                    <div class="card-precio">
+                        <p><span>$</span>399</p>
+                    </div>
+                    <p>*Acceso a todo el contenido VIP + 1 beneficiario.</p>
+                    <button>Escoger este <span class="flechita"></span></button>  
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="lista">
+            <ul>
+                <li><a href="">Linkedin</a></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Fotitos de buce</a></li>
+            </ul> 
+        </div>
+        <div class="imagencita">
+            <img src="Assets/img/logo-footer.svg" alt="">
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        /*alert('Buce y Sherlock');*/
+        function transicion()
+        {
+            document.getElementById('tabla1').classList.toggle('transicion');
+        }
+    </script>
+
+</body>
+</html>
